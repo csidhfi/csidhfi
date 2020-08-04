@@ -1,0 +1,163 @@
+==========================
+xISOG(k=359) cycles:
+46512420
+xISOG(k=353) cycles:
+45693154
+xISOG(k=349) cycles:
+45279363
+xISOG(k=347) cycles:
+45030686
+xISOG(k=337) cycles:
+43730361
+xISOG(k=331) cycles:
+43030851
+xISOG(k=317) cycles:
+41327501
+xISOG(k=313) cycles:
+40806068
+xISOG(k=311) cycles:
+40599235
+xISOG(k=307) cycles:
+40070839
+xISOG(k=293) cycles:
+38315066
+xISOG(k=283) cycles:
+37128666
+xISOG(k=281) cycles:
+36842174
+xISOG(k=277) cycles:
+36352203
+xISOG(k=271) cycles:
+35645371
+xISOG(k=269) cycles:
+35363760
+xISOG(k=263) cycles:
+34625082
+xISOG(k=257) cycles:
+33827229
+xISOG(k=251) cycles:
+33044827
+xISOG(k=241) cycles:
+31741433
+xISOG(k=239) cycles:
+31572293
+xISOG(k=233) cycles:
+30759407
+xISOG(k=229) cycles:
+30269080
+xISOG(k=227) cycles:
+30025035
+xISOG(k=223) cycles:
+29598691
+xISOG(k=211) cycles:
+28055148
+xISOG(k=199) cycles:
+26577415
+xISOG(k=197) cycles:
+26298372
+xISOG(k=193) cycles:
+25773806
+xISOG(k=191) cycles:
+25665158
+xISOG(k=181) cycles:
+24364158
+xISOG(k=179) cycles:
+24122094
+xISOG(k=173) cycles:
+23378758
+xISOG(k=167) cycles:
+22640063
+xISOG(k=163) cycles:
+22114230
+xISOG(k=157) cycles:
+21412171
+xISOG(k=151) cycles:
+20669453
+xISOG(k=149) cycles:
+20393563
+xISOG(k=139) cycles:
+19166426
+xISOG(k=137) cycles:
+18884789
+xISOG(k=131) cycles:
+18141046
+xISOG(k=127) cycles:
+17573784
+xISOG(k=113) cycles:
+15752704
+xISOG(k=109) cycles:
+15295199
+xISOG(k=107) cycles:
+15050000
+xISOG(k=103) cycles:
+14557962
+xISOG(k=101) cycles:
+14275504
+xISOG(k=97) cycles:
+13749137
+xISOG(k=89) cycles:
+12800085
+xISOG(k=83) cycles:
+12061842
+xISOG(k=79) cycles:
+11604076
+xISOG(k=73) cycles:
+10797828
+xISOG(k=71) cycles:
+10585245
+xISOG(k=67) cycles:
+10060333
+xISOG(k=61) cycles:
+9178502
+xISOG(k=59) cycles:
+8931446
+xISOG(k=53) cycles:
+8157445
+xISOG(k=47) cycles:
+7454349
+xISOG(k=43) cycles:
+6925748
+xISOG(k=41) cycles:
+6645446
+xISOG(k=37) cycles:
+6156206
+xISOG(k=31) cycles:
+5274634
+xISOG(k=29) cycles:
+4992759
+xISOG(k=23) cycles:
+4255579
+xISOG(k=19) cycles:
+3728393
+xISOG(k=17) cycles:
+3445826
+xISOG(k=13) cycles:
+2776554
+xISOG(k=11) cycles:
+2530510
+xISOG(k=7) cycles:
+1824159
+xISOG(k=5) cycles:
+1543595
+xISOG(k=3) cycles:
+1084062
+xISOG(k=587) cycles:
+74722255
+xISOG(k=373) cycles:
+48221911
+xISOG(k=367) cycles:
+47517651
+private alice cycles:
+693908
+private bob cycles:
+748388
+public alice cycles:
+16378460982
+public bob cycles:
+16360819320
+shared alice cycles:
+16826146660
+shared bob cycles:
+17439495077
+OK KEYS
+#

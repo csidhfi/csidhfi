@@ -1,0 +1,6 @@
+[submodule "benchmark/stm32f407/libopencm3"]
+	path = benchmark/stm32f407/libopencm3
+	url = https://github.com/libopencm3/libopencm3
+[submodule "chipwhisperer"]
+	path = chipwhisperer
+	url = https://github.com/newaetech/chipwhisperer

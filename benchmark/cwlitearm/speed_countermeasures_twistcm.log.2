@@ -1,0 +1,329 @@
+rm -f -- speed_nocountermeasures-CWLITEARM.hex
+rm -f -- speed_nocountermeasures-CWLITEARM.eep
+rm -f -- speed_nocountermeasures-CWLITEARM.cof
+rm -f -- speed_nocountermeasures-CWLITEARM.elf
+rm -f -- speed_nocountermeasures-CWLITEARM.map
+rm -f -- speed_nocountermeasures-CWLITEARM.sym
+rm -f -- speed_nocountermeasures-CWLITEARM.lss
+rm -f -- objdir/*.o
+rm -f -- objdir/*.lst
+rm -f -- speed.s notrandombytes.s systick-standalone.s ./csidh.s ./constants.s ./fp.s ./mont.s ./uint.s stm32f3_hal.s stm32f3_hal_lowlevel.s stm32f3_sysmem.s
+rm -f -- speed.d notrandombytes.d systick-standalone.d ./csidh.d ./constants.d ./fp.d ./mont.d ./uint.d stm32f3_hal.d stm32f3_hal_lowlevel.d stm32f3_sysmem.d
+rm -f -- speed.i notrandombytes.i systick-standalone.i ./csidh.i ./constants.i ./fp.i ./mont.i ./uint.i stm32f3_hal.i stm32f3_hal_lowlevel.i stm32f3_sysmem.i
+.
+-------- begin --------
+arm-none-eabi-gcc (Arch Repository) 10.1.0
+Copyright (C) 2020 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+.
+Compiling C: speed.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/speed.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/speed.o.d speed.c -o objdir/speed.o 
+.
+Compiling C: notrandombytes.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/notrandombytes.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/notrandombytes.o.d notrandombytes.c -o objdir/notrandombytes.o 
+.
+Compiling C: systick-standalone.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/systick-standalone.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/systick-standalone.o.d systick-standalone.c -o objdir/systick-standalone.o 
+.
+Compiling C: csidh.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/csidh.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/csidh.o.d csidh.c -o objdir/./csidh.o 
+.
+Compiling C: constants.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/constants.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/constants.o.d constants.c -o objdir/./constants.o 
+.
+Compiling C: fp.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/fp.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/fp.o.d fp.c -o objdir/./fp.o 
+.
+Compiling C: mont.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/mont.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/mont.o.d mont.c -o objdir/./mont.o 
+.
+Compiling C: uint.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/uint.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/uint.o.d uint.c -o objdir/./uint.o 
+.
+Compiling C: ./hal/stm32f3/stm32f3_hal.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/stm32f3_hal.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/stm32f3_hal.o.d ./hal/stm32f3/stm32f3_hal.c -o objdir/stm32f3_hal.o 
+.
+Compiling C: ./hal/stm32f3/stm32f3_hal_lowlevel.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/stm32f3_hal_lowlevel.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/stm32f3_hal_lowlevel.o.d ./hal/stm32f3/stm32f3_hal_lowlevel.c -o objdir/stm32f3_hal_lowlevel.o 
+.
+Compiling C: ./hal/stm32f3/stm32f3_sysmem.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/stm32f3_sysmem.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/stm32f3_sysmem.o.d ./hal/stm32f3/stm32f3_sysmem.c -o objdir/stm32f3_sysmem.o 
+.
+Assembling: ./hal/stm32f3/stm32f3_startup.S
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -x assembler-with-cpp -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -DF_CPU=7372800 -Wa,-gstabs,-adhlns=objdir/stm32f3_startup.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy ./hal/stm32f3/stm32f3_startup.S -o objdir/stm32f3_startup.o
+.
+Linking: speed_nocountermeasures-CWLITEARM.elf
+arm-none-eabi-gcc -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/speed.o -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/speed_nocountermeasures-CWLITEARM.elf.d objdir/speed.o objdir/notrandombytes.o objdir/systick-standalone.o objdir/./csidh.o objdir/./constants.o objdir/./fp.o objdir/./mont.o objdir/./uint.o objdir/stm32f3_hal.o objdir/stm32f3_hal_lowlevel.o objdir/stm32f3_sysmem.o objdir/stm32f3_startup.o --output speed_nocountermeasures-CWLITEARM.elf --specs=nano.specs -T ./hal/stm32f3/LinkerScript.ld -Wl,--gc-sections -lm -Wl,-Map=speed_nocountermeasures-CWLITEARM.map,--cref   -lm  
+.
+Creating load file for Flash: speed_nocountermeasures-CWLITEARM.hex
+arm-none-eabi-objcopy -O ihex -R .eeprom -R .fuse -R .lock -R .signature speed_nocountermeasures-CWLITEARM.elf speed_nocountermeasures-CWLITEARM.hex
+.
+Creating load file for EEPROM: speed_nocountermeasures-CWLITEARM.eep
+arm-none-eabi-objcopy -j .eeprom --set-section-flags=.eeprom="alloc,load" \
+--change-section-lma .eeprom=0 --no-change-warnings -O ihex speed_nocountermeasures-CWLITEARM.elf speed_nocountermeasures-CWLITEARM.eep || exit 0
+.
+Creating Extended Listing: speed_nocountermeasures-CWLITEARM.lss
+arm-none-eabi-objdump -h -S -z speed_nocountermeasures-CWLITEARM.elf > speed_nocountermeasures-CWLITEARM.lss
+.
+Creating Symbol Table: speed_nocountermeasures-CWLITEARM.sym
+arm-none-eabi-nm -n speed_nocountermeasures-CWLITEARM.elf > speed_nocountermeasures-CWLITEARM.sym
+Size after:
+   text	   data	    bss	    dec	    hex	filename
+  21664	    108	   1296	  23068	   5a1c	speed_nocountermeasures-CWLITEARM.elf
++--------------------------------------------------------
++ Built for platform CW-Lite Arm (STM32F3)
++--------------------------------------------------------
+rm -f -- speed_countermeasures-CWLITEARM.hex
+rm -f -- speed_countermeasures-CWLITEARM.eep
+rm -f -- speed_countermeasures-CWLITEARM.cof
+rm -f -- speed_countermeasures-CWLITEARM.elf
+rm -f -- speed_countermeasures-CWLITEARM.map
+rm -f -- speed_countermeasures-CWLITEARM.sym
+rm -f -- speed_countermeasures-CWLITEARM.lss
+rm -f -- objdir/*.o
+rm -f -- objdir/*.lst
+rm -f -- speed.s notrandombytes.s systick-standalone.s ./csidh.s ./constants.s ./fp.s ./mont.s ./uint.s stm32f3_hal.s stm32f3_hal_lowlevel.s stm32f3_sysmem.s
+rm -f -- speed.d notrandombytes.d systick-standalone.d ./csidh.d ./constants.d ./fp.d ./mont.d ./uint.d stm32f3_hal.d stm32f3_hal_lowlevel.d stm32f3_sysmem.d
+rm -f -- speed.i notrandombytes.i systick-standalone.i ./csidh.i ./constants.i ./fp.i ./mont.i ./uint.i stm32f3_hal.i stm32f3_hal_lowlevel.i stm32f3_sysmem.i
+.
+-------- begin --------
+arm-none-eabi-gcc (Arch Repository) 10.1.0
+Copyright (C) 2020 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+.
+Compiling C: speed.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -DCM -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/speed.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/speed.o.d speed.c -o objdir/speed.o 
+.
+Compiling C: notrandombytes.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -DCM -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/notrandombytes.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/notrandombytes.o.d notrandombytes.c -o objdir/notrandombytes.o 
+.
+Compiling C: systick-standalone.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -DCM -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/systick-standalone.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/systick-standalone.o.d systick-standalone.c -o objdir/systick-standalone.o 
+.
+Compiling C: csidh.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -DCM -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/csidh.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/csidh.o.d csidh.c -o objdir/./csidh.o 
+.
+Compiling C: constants.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -DCM -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/constants.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/constants.o.d constants.c -o objdir/./constants.o 
+.
+Compiling C: fp.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -DCM -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/fp.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/fp.o.d fp.c -o objdir/./fp.o 
+.
+Compiling C: mont.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -DCM -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/mont.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/mont.o.d mont.c -o objdir/./mont.o 
+.
+Compiling C: uint.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -DCM -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/uint.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/uint.o.d uint.c -o objdir/./uint.o 
+.
+Compiling C: ./hal/stm32f3/stm32f3_hal.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -DCM -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/stm32f3_hal.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/stm32f3_hal.o.d ./hal/stm32f3/stm32f3_hal.c -o objdir/stm32f3_hal.o 
+.
+Compiling C: ./hal/stm32f3/stm32f3_hal_lowlevel.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -DCM -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/stm32f3_hal_lowlevel.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/stm32f3_hal_lowlevel.o.d ./hal/stm32f3/stm32f3_hal_lowlevel.c -o objdir/stm32f3_hal_lowlevel.o 
+.
+Compiling C: ./hal/stm32f3/stm32f3_sysmem.c
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -DCM -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/stm32f3_sysmem.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/stm32f3_sysmem.o.d ./hal/stm32f3/stm32f3_sysmem.c -o objdir/stm32f3_sysmem.o 
+.
+Assembling: ./hal/stm32f3/stm32f3_startup.S
+arm-none-eabi-gcc -c -mcpu=cortex-m4 -I. -x assembler-with-cpp -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -DF_CPU=7372800 -Wa,-gstabs,-adhlns=objdir/stm32f3_startup.lst -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy ./hal/stm32f3/stm32f3_startup.S -o objdir/stm32f3_startup.o
+.
+Linking: speed_countermeasures-CWLITEARM.elf
+arm-none-eabi-gcc -mcpu=cortex-m4 -I. -DBENCHMARK --specs=nosys.specs -DCM -mthumb -mfloat-abi=soft -fmessage-length=0 -ffunction-sections -gdwarf-2 -DSTM32F303xC -DSTM32F3 -DSTM32 -DDEBUG -DHAL_TYPE=HAL_stm32f3 -DPLATFORM=CWLITEARM -DF_CPU=7372800UL -O3 -funsigned-char -funsigned-bitfields -fshort-enums -Wall -Wstrict-prototypes -Wa,-adhlns=objdir/speed.o -I./hal -I./hal/stm32f3 -I./hal/stm32f3/CMSIS -I./hal/stm32f3/CMSIS/core -I./hal/stm32f3/CMSIS/device -I./hal/stm32f4/Legacy -std=gnu99 -MMD -MP -MF .dep/speed_countermeasures-CWLITEARM.elf.d objdir/speed.o objdir/notrandombytes.o objdir/systick-standalone.o objdir/./csidh.o objdir/./constants.o objdir/./fp.o objdir/./mont.o objdir/./uint.o objdir/stm32f3_hal.o objdir/stm32f3_hal_lowlevel.o objdir/stm32f3_sysmem.o objdir/stm32f3_startup.o --output speed_countermeasures-CWLITEARM.elf --specs=nano.specs -T ./hal/stm32f3/LinkerScript.ld -Wl,--gc-sections -lm -Wl,-Map=speed_countermeasures-CWLITEARM.map,--cref   -lm  
+.
+Creating load file for Flash: speed_countermeasures-CWLITEARM.hex
+arm-none-eabi-objcopy -O ihex -R .eeprom -R .fuse -R .lock -R .signature speed_countermeasures-CWLITEARM.elf speed_countermeasures-CWLITEARM.hex
+.
+Creating load file for EEPROM: speed_countermeasures-CWLITEARM.eep
+arm-none-eabi-objcopy -j .eeprom --set-section-flags=.eeprom="alloc,load" \
+--change-section-lma .eeprom=0 --no-change-warnings -O ihex speed_countermeasures-CWLITEARM.elf speed_countermeasures-CWLITEARM.eep || exit 0
+.
+Creating Extended Listing: speed_countermeasures-CWLITEARM.lss
+arm-none-eabi-objdump -h -S -z speed_countermeasures-CWLITEARM.elf > speed_countermeasures-CWLITEARM.lss
+.
+Creating Symbol Table: speed_countermeasures-CWLITEARM.sym
+arm-none-eabi-nm -n speed_countermeasures-CWLITEARM.elf > speed_countermeasures-CWLITEARM.sym
+Size after:
+   text	   data	    bss	    dec	    hex	filename
+  24308	    108	   1296	  25712	   6470	speed_countermeasures-CWLITEARM.elf
++--------------------------------------------------------
++ Built for platform CW-Lite Arm (STM32F3)
++--------------------------------------------------------
+making binaries
+Serial baud rate = 38400
+flashing binary speed_countermeasures-CWLITEARM.hex
+Serial baud rate = 115200
+Detected known STMF32: STM32F302xB(C)/303xB(C)
+Extended erase (0x44), this can take ten seconds or more
+Attempting to program 24423 bytes at 0x8000000
+STM32F Programming flash...
+STM32F Reading flash...
+Verified flash OK, 24423 bytes
+Serial baud rate = 38400
+output starts (speed_countermeasures-CWLITEARM.hex):
+ ==========================
+xISOG(k=359) cycles:
+46465618
+xISOG(k=353) cycles:
+45653180
+xISOG(k=349) cycles:
+45236135
+xISOG(k=347) cycles:
+44984404
+xISOG(k=337) cycles:
+43688607
+xISOG(k=331) cycles:
+42981833
+xISOG(k=317) cycles:
+41300709
+xISOG(k=313) cycles:
+40776761
+xISOG(k=311) cycles:
+40559015
+xISOG(k=307) cycles:
+40038595
+xISOG(k=293) cycles:
+38278587
+xISOG(k=283) cycles:
+37087443
+xISOG(k=281) cycles:
+36806902
+xISOG(k=277) cycles:
+36311784
+xISOG(k=271) cycles:
+35605886
+xISOG(k=269) cycles:
+35332271
+xISOG(k=263) cycles:
+34597340
+xISOG(k=257) cycles:
+33789271
+xISOG(k=251) cycles:
+33010079
+xISOG(k=241) cycles:
+31711893
+xISOG(k=239) cycles:
+31537881
+xISOG(k=233) cycles:
+30731768
+xISOG(k=229) cycles:
+30236854
+xISOG(k=227) cycles:
+29993835
+xISOG(k=223) cycles:
+29574845
+xISOG(k=211) cycles:
+28026324
+xISOG(k=199) cycles:
+26554918
+xISOG(k=197) cycles:
+26277546
+xISOG(k=193) cycles:
+25747038
+xISOG(k=191) cycles:
+25635452
+xISOG(k=181) cycles:
+24341742
+xISOG(k=179) cycles:
+24097160
+xISOG(k=173) cycles:
+23359752
+xISOG(k=167) cycles:
+22621020
+xISOG(k=163) cycles:
+22091087
+xISOG(k=157) cycles:
+21394359
+xISOG(k=151) cycles:
+20657280
+xISOG(k=149) cycles:
+20371307
+xISOG(k=139) cycles:
+19140830
+xISOG(k=137) cycles:
+18862275
+xISOG(k=131) cycles:
+18125830
+xISOG(k=127) cycles:
+17558208
+xISOG(k=113) cycles:
+15737044
+xISOG(k=109) cycles:
+15280117
+xISOG(k=107) cycles:
+15037360
+xISOG(k=103) cycles:
+14543286
+xISOG(k=101) cycles:
+14261886
+xISOG(k=97) cycles:
+13736719
+xISOG(k=89) cycles:
+12787102
+xISOG(k=83) cycles:
+12046575
+xISOG(k=79) cycles:
+11594627
+xISOG(k=73) cycles:
+10784923
+xISOG(k=71) cycles:
+10578078
+xISOG(k=67) cycles:
+10047926
+xISOG(k=61) cycles:
+9168594
+xISOG(k=59) cycles:
+8923144
+xISOG(k=53) cycles:
+8151197
+xISOG(k=47) cycles:
+7448833
+xISOG(k=43) cycles:
+6920547
+xISOG(k=41) cycles:
+6642459
+xISOG(k=37) cycles:
+6149816
+xISOG(k=31) cycles:
+5266385
+xISOG(k=29) cycles:
+4987181
+xISOG(k=23) cycles:
+4251652
+xISOG(k=19) cycles:
+3725916
+xISOG(k=17) cycles:
+3443321
+xISOG(k=13) cycles:
+2773346
+xISOG(k=11) cycles:
+2529177
+xISOG(k=7) cycles:
+1823367
+xISOG(k=5) cycles:
+1541435
+xISOG(k=3) cycles:
+1082965
+xISOG(k=587) cycles:
+74650400
+xISOG(k=373) cycles:
+48176284
+xISOG(k=367) cycles:
+47471013
+private alice cycles:
+693908
+private bob cycles:
+748388
+public alice cycles:
+21113690480
+public bob cycles:
+21096032903
+shared alice cycles:
+21561386780
+shared bob cycles:
+22174711842
+OK KEYS
+#speed_countermeasures-CWLITEARM.hex done.
