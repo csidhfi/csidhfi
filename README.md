@@ -10,13 +10,14 @@ Authors
  - Hiroshi Onuki `<onuki@mist.i.u-tokyo.ac.jp>`
  - Marc Stöttinger `<marc.stoettinger@continental-corporation.com>` 
 
-The paper is available at <TODO>
+The paper is available at TODO
+
 
 ```
-git clone --recurse-submodules --depth 1 https://github.com/csidhfi/cisdhfi
+git clone --recurse-submodules https://github.com/csidhfi/csidhfi
 ```
 
-#Overview
+# Overview
 
 This archive contains the following 
 - `simulation` contains the simulation scripts used in Section 4 of the paper.
