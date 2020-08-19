@@ -10,7 +10,7 @@ Authors
  - Hiroshi Onuki `<onuki@mist.i.u-tokyo.ac.jp>`
  - Marc Stöttinger `<marc.stoettinger@continental-corporation.com>` 
 
-The paper is available at https://kannwischer.eu/papers/2020_cremebrulee.pdf
+The paper is available at https://eprint.iacr.org/2020/1005.pdf
 
 
 ```
